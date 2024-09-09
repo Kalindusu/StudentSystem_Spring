@@ -31,5 +31,10 @@ public class UserController {
         return userService.updateUser(userDTO);
     }
 
+    @DeleteMapping("/deleteuser")
+    public boolean deleteUser(@RequestBody UserDTO userDTO){
+        return userService.deleteUser(userDTO);
+    }
+
 
 }
