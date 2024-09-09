@@ -28,6 +28,11 @@ public class UserService {
 
     //update user
 
+//    public UserDTO updateUser(UserDTO userDTO){
+//        userRepository.save(modelMapper.map(userDTO,User.class));
+//        return userDTO;
+//    }
+
     public UserDTO updateUser(UserDTO userDTO){
         userRepository.save(modelMapper.map(userDTO,User.class));
         return userDTO;
