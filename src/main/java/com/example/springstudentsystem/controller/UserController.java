@@ -39,6 +39,11 @@ public class UserController {
     //user id>user details
     //select * from where id=2
 
+    @GetMapping("/getuserbyuserId/{userID}")
+    public UserDTO getUserByID(@PathVariable String userID){
+       return userService.getUserByID(userID);
+    }
+
 
 
 
