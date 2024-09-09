@@ -23,10 +23,16 @@ public class UserService {
     public UserDTO saveUser(UserDTO userDTO){
         userRepository.save(modelMapper.map(userDTO, User.class));
         return userDTO;
-
-
-
 //        User.class tells ModelMapper that we want to convert it into a User entity.
     }
+
+    //update user
+
+    public UserDTO updateUser(UserDTO userDTO){
+        userRepository.save(modelMapper.map(userDTO,User.class));
+        return userDTO;
+    }
+
+
 
 }
