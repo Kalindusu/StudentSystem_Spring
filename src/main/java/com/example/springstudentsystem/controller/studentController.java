@@ -30,10 +30,19 @@ public class studentController {
         return student;
     }
 
-    @PutMapping(value = "/delete/{id}")
+    @DeleteMapping(value = "/delete/{id}")
     private void deletestudent(@PathVariable("id")String id) {
        studentservices.deletestudent(id);
     }
+
+    @RequestMapping("/student/{id}")
+    private Student getStudent(@PathVariable(name="id")String studentid){
+        return studentservices.getStudentById(studentid);
+
+    }
+
+
+
 
 
 

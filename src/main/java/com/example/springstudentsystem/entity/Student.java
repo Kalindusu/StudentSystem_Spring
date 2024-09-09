@@ -4,7 +4,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-@Table(name = "student")
+
 public class Student {
    @Id
    @GeneratedValue()
