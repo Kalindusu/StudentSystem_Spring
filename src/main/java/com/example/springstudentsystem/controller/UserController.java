@@ -36,5 +36,11 @@ public class UserController {
         return userService.deleteUser(userDTO);
     }
 
+    //user id>user details
+    //select * from where id=2
+
+
+
+
 
 }

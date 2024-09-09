@@ -46,7 +46,7 @@ public class UserService {
 //    }
 
     public boolean deleteUser(UserDTO userDTO){
-        userRepository.save(modelMapper.map(userDTO,User.class));
+        userRepository.delete(modelMapper.map(userDTO,User.class));
         return true;
 
     }
