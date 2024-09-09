@@ -16,9 +16,17 @@ public class UserService {
    @Autowired
    private ModelMapper modelMapper;
 
+
+//    modelMapper is an instance of the ModelMapper class. It's used to automatically convert (or map) the userDTO object into a User entity object.
+//    userDTO is passed as the source object, and User.class tells ModelMapper that we want to convert it into a User entity.
+//    This conversion is necessary because userDTO is a simpler object (containing data meant for communication), and we need to convert it to a User entity, which represents the actual data stored in the database.
     public UserDTO saveUser(UserDTO userDTO){
         userRepository.save(modelMapper.map(userDTO, User.class));
         return userDTO;
+
+
+
+//        User.class tells ModelMapper that we want to convert it into a User entity.
     }
 
 }
